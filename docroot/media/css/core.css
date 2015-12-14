@@ -1,0 +1,1061 @@
+@font-face {
+font-family: 'Diablo Heavy';
+font-style: normal;
+font-weight: normal;
+src: local('Diablo Heavy'), url('diablo.woff') format('woff');
+}
+
+@font-face {font-family: "Diablo";
+    src: url("http://db.onlinewebfonts.com/t/e25e05981c889917f9baec88c98edae6.eot");
+    src: url("http://db.onlinewebfonts.com/t/e25e05981c889917f9baec88c98edae6.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/e25e05981c889917f9baec88c98edae6.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/e25e05981c889917f9baec88c98edae6.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/e25e05981c889917f9baec88c98edae6.svg#Diablo") format("svg");
+}
+
+html, body {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10pt;
+    padding: 0;
+    margin: 0;
+    color: #FFF;
+    text-shadow: 0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000;
+    line-height: 1.2em;
+    letter-spacing: 0.025em;
+
+	background-color: #000;
+
+	background-image: url(http://labs.dalines.org/astralis.jpg);
+	
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 50%;
+	
+}
+
+#information {
+	position: absolute;
+	padding: 25px;
+	text-align: center;
+	width: 350px;
+	left: calc(50% - 175px);
+	top: 240px;
+	border: 1px solid #382f1f;
+	box-shadow: 0 0 15px 3px #000000;
+	cursor: pointer;
+	background-color: #090909;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+body.debug div {
+	border: 1px solid #DD0000;
+}
+
+body.debug div div {
+	border: 1px solid #00DD00;
+}
+
+body.debug div div div {
+	border: 1px solid #0000DD;
+}
+
+body.debug div div div div {
+	border: 1px solid #DDDD00;
+}
+
+body.debug div div div div div {
+	border: 1px solid #DD00DD;
+}
+
+#header {
+	margin-top: 5px;
+}
+
+#header div.related-input {
+	padding: 5px 25px;
+}
+
+#header div.navigation {
+	padding-top: 10px;
+	float: right;
+}
+
+#header div.navigation div.d-button {
+	display: block;
+	margin-bottom: 5px;
+}
+
+#header div.navigation div.d-button input {
+	width: 150px;
+}
+
+.name {
+	color: #ad835a;
+}
+
+div.wrapper {
+	position: relative;
+	width: 996px;
+	margin: 0px auto;
+	border: 1px solid #382f1f;
+	border-top: none;
+
+	box-shadow: 0 5px 15px 0 #000000;
+	background: #12110f url("http://media.dalin.es/astralis/content-bg.jpg")  0 0 repeat;
+}
+
+#main {
+	padding: 25px 30px;
+	position: relative;
+	width: 994px;
+	margin: 0px auto;
+	box-sizing: border-box;
+	box-shadow: inset 0 0 20px #000;
+	background: transparent url("http://media.dalin.es/astralis/bg-source.jpg") no-repeat;
+}
+
+#main .corner.tl {
+	top: -5px;
+	left: -9px;
+}
+
+#main .corner.tr {
+    top: -5px;
+    right: -9px;
+    background-position: -37px 0;
+}
+
+#main .corner.bl {
+    bottom: -5px;
+    left: -9px;
+    background-position: 0 -41px;
+}
+
+#main .corner.br {
+    bottom: -5px;
+    right: -9px;
+    background-position: -37px -41px;
+}
+
+#main .corner {
+    position: absolute;
+    width: 38px;
+    height: 41px;
+    background: url("http://media.dalin.es/astralis/box-corners-2.png") no-repeat;
+}
+
+#content-left {
+	box-sizing: border-box;
+	float: left;
+	padding: 25px;
+	position: relative;
+	width: 600px;
+	margin: 0px auto;
+	margin-top: 100px;
+	box-sizing: border-box;
+	border: 1px solid #382f1f;
+	box-shadow: inset 0 0 20px #000;
+	background: #252017 url("http://media.dalin.es/astralis/box-bg.jpg") no-repeat;
+
+}
+
+#content-right {
+	padding-top: 85px;
+	width: 325px;
+	box-sizing: border-box;
+	float: right;
+}
+
+#content-right .bs-content {
+	position: relative;
+	background: #252017 url("http://media.dalin.es/astralis/features-mid.jpg") repeat-y;
+}
+
+#content-right .bs-bot {
+	background: url("http://media.dalin.es/astralis/features-bot.jpg") 0 100% no-repeat;
+}
+
+#content-right .bs-top {
+	min-height: 300px;
+	padding: 85px 25px 75px 25px;
+	background: url("http://media.dalin.es/astralis/features-top.jpg") 0 0 no-repeat;
+}
+
+#item-level-info {
+    position: absolute;
+    right: 0;
+    top: -3px;
+    width: 280px;
+    height: 91px;
+    color: #A99877;
+    background: url("http://media.dalin.es/astralis/box-level-bg.png") top right no-repeat;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.level-info {
+    margin: 30px 20px 0 0;
+    float: right;
+    line-height: 2.5em;
+    padding: 0 45px 0 10px;
+    background: #12110f;
+    white-space: nowrap;
+    text-align: right;
+    border-radius: 4px;
+}
+
+#item-level-info .level-number {
+    right: 23px;
+    top: 29px;
+}
+
+.level-number {
+    position: absolute;
+    color: #DED2AB;
+    text-align: center;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: url("http://media.dalin.es/astralis/level-circle.png") no-repeat;
+}
+
+.wrapper .level-number {
+	right: 40px;
+	top: 120px;
+	z-index: 400;
+}
+
+h3 {
+	font: normal 16px "Palatino Linotype", "Times", serif;
+    color: #660000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    margin: 0;
+    
+	text-shadow: none;
+}
+
+#anvil {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -139px;
+    left: 35px;
+    background: no-repeat;
+}
+
+.bs-top ul li span.inner {
+	position: absolute;
+    top: 5px;
+    left: -2px;
+	display: inline-block;
+    overflow: hidden;
+}
+.bs-top ul li span.anvil {
+	background: url("http://media.dalin.es/anvil/anvil.png") 50% 50% no-repeat;
+}
+.bs-top ul li span.training {
+	background: url("http://media.dalin.es/anvil/training.png") 50% 50% no-repeat;
+}
+.bs-top ul li span.vendor {
+	background: url("http://media.dalin.es/anvil/vendor.png") 50% 50% no-repeat;
+}
+
+.bs-top ul li span.desc {
+	font-size: 12px;
+    line-height: 130%;
+    display: block;
+}
+
+.bs-top ul li span.circle-frame {
+	background: url("http://media.dalin.es/anvil/trait-circle.png") no-repeat;
+	width: 64px;
+	height: 64px;
+	display: block;
+} 
+
+.bs-top ul li {
+	cursor: pointer;
+	position: relative;
+    padding-left: 75px;
+    margin-top: 25px;
+    text-shadow: none;
+    color: #000;
+}
+
+.bs-top ul {
+	margin: 0;
+	margin-top: 40px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#forge {
+	
+	cursor: pointer;
+}
+
+#footer {
+	clear: both;
+	margin-top: 20px;
+}
+
+#selected-item {
+	
+	width: 64px;
+	padding-top: 2px;
+	height: 130px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	
+}
+
+.item {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 2px #000000;
+	display: inline-block;
+}
+
+div.gradient {
+
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	display: inline-block;
+	
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 2px;
+
+	border: none;
+	
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 75%);
+	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 75%);
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 75%);
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 75%);
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 75%);
+
+}
+
+.item:hover div.gradient {
+	background-image: none;
+}
+
+.item.small {
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	box-shadow: 0 0 5px 1px #000000;
+}
+
+.item.normal,
+.item.brown {
+	background-image: url(http://media.dalin.es/astralis/brown.png);
+	border: 1px solid #835C3B;
+}
+.item.normal:hover,
+.item.brown:hover {
+	border-color: #9c7554;
+}
+
+.item.set,
+.item.green {
+	background-image: url(http://media.dalin.es/astralis/green.png);
+	border: 1px solid #4AA02C;
+}
+
+.item.magic,
+.item.blue {
+	background-image: url(http://media.dalin.es/astralis/blue.png);
+	border: 1px solid #6091a6;
+}
+
+.item.rare,
+.item.yellow {
+	background-image: url(http://media.dalin.es/astralis/yellow.png);
+	border: 1px solid #907527;
+}
+
+.item.legendary,
+.item.orange {
+	background-image: url(http://media.dalin.es/astralis/orange.png);
+	border: 1px solid #AF7817;
+}
+
+.item.small.bitbucket {
+	height: 32px;
+	width: 1px;
+	box-shadow: none;
+}
+
+div.item-wrapper {
+	float: left;
+	background-image: url(http://media.dalin.es/astralis/brown.png);
+
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	border: 1px solid #835C3B;
+	box-shadow: 0 0 10px 2px #000000;
+}	
+
+#item-progress {
+	height: 40px;
+	background: url(http://media.dalin.es/astralis/scrubber-container.png) center center no-repeat;
+	width: 885px;
+	margin: 20px auto;
+	position: relative;
+}
+
+div.item-description {
+	float: left;
+}
+
+div.item-progress {
+	height: 40px;
+}
+
+div.scrubber-icon {
+    width: 40px;
+    height: 40px;
+    float: left;
+    position: absolute;
+	background-position: -34px -162px;
+	background-image: url(http://media.dalin.es/astralis/scrubber-elements.png);
+    background-repeat: no-repeat no-repeat;
+}
+div.scrubber-icon.scrubber-on {
+	background-position: -142px -162px;
+}
+
+#item-picker,
+#item-progress {
+	clear: both;
+}
+
+#item-picker-container {
+	z-index: 600;
+	position: fixed;
+	width: 540px;
+	top: 25px;
+	left: calc(50% - 270px);
+}
+
+.item-picker-top {
+	background: transparent url(http://media.dalin.es/anvil/weapons.png) 50% 0 no-repeat;
+	padding-top: 69px;
+}
+
+#item-picker-content {
+	box-shadow: 0 5px 15px 3px #000000;
+	width: 540px;
+	padding: 40px 40px;
+	height: 675px;
+	background-image: url(http://media.dalin.es/anvil/item-select.jpg);
+}
+
+#item-picker-content h3 {
+	font-family: "Diablo";
+	text-align: center;
+	color: #F3E6D0;
+}
+
+#item-picker .item {
+	cursor: pointer;
+	margin: 5px;
+}
+
+.divider {
+	background: transparent url(http://media.dalin.es/anvil/divider.jpg) top center no-repeat;
+	height: 3px;
+	margin-bottom: 4px;
+}
+
+#item-card {
+	z-index: 800;
+	cursor: pointer;
+	font: normal 12px/1.5 Arial, sans-serif; color: #c7b377;
+	position: absolute;
+	top: 40px;
+	left: calc(50% - 175px);
+	width: 356px;
+	background-color: rgba(0, 0, 0, 1);
+	border: 1px solid #835C3B;
+	padding: 2px;
+	
+	box-shadow: 0 0 15px 3px #000000;
+}
+
+#item-card div.tooltip-head {
+	height: 40px; 
+	width: 350px; 
+	padding: 0 15px; 
+	text-align: center;
+	background: url("../images/ui/tooltip-title.jpg") no-repeat; 
+}
+
+#item-card div.final {
+	clear: both;
+	padding-top: 10px;
+	padding-left: 5px;
+	text-align: left;
+}
+
+.i-desc .tooltip-head h3 {
+	color: #F3E6D0; 
+	font: 22px "Palatino Linotype", "Times", serif; 
+	height: 40px; 
+	line-height: 37px; 
+	text-align: center; 
+	overflow: hidden; 
+	white-space: nowrap; 
+	text-overflow: ellipsis;
+	margin: 0;
+}
+
+#item-card .tooltip-head-gray,
+#item-card .tooltip-head-white  { background-position: 0 -40px; }
+#item-card .tooltip-head-blue   { background-position: 0 -80px; }
+#item-card .tooltip-head-yellow { background-position: 0 -120px; }
+#item-card .tooltip-head-orange { background-position: 0 -160px; }
+#item-card .tooltip-head-purple { background-position: 0 -200px; }
+#item-card .tooltip-head-green  { background-position: 0 -240px; }
+
+#item-card div.icon {
+	
+	float: left;
+	display: inline-block;
+	margin: 10px 5px;
+	
+	background-image: url(http://media.dalin.es/astralis/brown.png);
+
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	border: 1px solid #835C3B;
+	box-shadow: 0 0 10px 2px #000000;
+	
+}
+
+#item-card div.icon img {
+	margin-top: 0px;
+	margin-left: -5px;
+}
+
+#item-card div.icon:hover div.gradient {
+	background-image: none;
+}
+
+#item-card div.icon div.gradient {
+
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	display: inline-block;
+	
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 2px;
+	
+	width: 64px;
+	height: 130px;
+	border: none;
+	
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 75%);
+	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 75%);
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 75%);
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 75%);
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 75%);
+
+}
+
+.i-desc .heading {
+	margin-top: 10px;
+	margin-right: 5px;
+	float: right;
+	width: 260px;
+}
+
+.i-desc .heading .type {
+	float: left;
+}
+
+.i-desc .heading .extra {
+	float: right;
+}
+
+.i-desc .heading .number {
+	padding-top: 10px;
+	clear: both;
+	font: 45px "Palatino Linotype", "Times", serif;
+	line-height: 38px; 
+}
+
+.i-desc .heading .number-info {
+	margin-bottom: 10px;
+}
+
+.i-desc .highlight {
+	color: #FFF;
+}
+
+.i-desc .faded {
+	color: #999;
+}
+
+.i-desc .brown {
+	color: #7B6D55;
+}
+
+.brown.name {
+	color: #7B6D55;
+}
+
+.final span.crafting {
+	display: inline-block;
+}
+
+.hidden {
+	display: none;
+}
+
+.animated {
+    -webkit-animation-duration: 0.8s; 
+    animation-duration: 0.8s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both;
+}
+ 
+.item-selector {
+	margin-top: 5px;
+}
+ 
+.item-selector .item-description {
+	margin-left: 10px;
+}
+
+.item-description .tooltip-head h3 {
+	text-align: left;
+	margin: 0;
+	height: 22px;
+	line-height: inherit;
+	font-family: "Diablo";
+}
+
+
+@-webkit-keyframes shake {
+	0% { -webkit-transform:         translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform:     translate(-1px, -2px) rotate(-2deg); }
+    20% { -webkit-transform:     translate(-3px, 0px) rotate(3deg); }
+    30% { -webkit-transform:     translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform:     translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform:     translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform:     translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform:     translate(2px, 1px) rotate(-2deg); }
+    80% { -webkit-transform:     translate(-1px, -1px) rotate(4deg); }
+    90% { -webkit-transform:     translate(2px, 2px) rotate(0deg); }
+   100% { -webkit-transform:     translate(1px, -2px) rotate(-1deg); }
+}
+ 
+ @keyframes shake { 
+	0% { transform:         translate(2px, 1px) rotate(0deg); }
+	10% { transform:     translate(-1px, -2px) rotate(-2deg); }
+    20% { transform:     translate(-3px, 0px) rotate(3deg); }
+    30% { transform:     translate(0px, 2px) rotate(0deg); }
+    40% { transform:     translate(1px, -1px) rotate(1deg); }
+    50% { transform:     translate(-1px, 2px) rotate(-1deg); }
+    60% { transform:     translate(-3px, 1px) rotate(0deg); }
+    70% { transform:     translate(2px, 1px) rotate(-2deg); }
+    80% { transform:     translate(-1px, -1px) rotate(4deg); }
+    90% { transform:     translate(2px, 2px) rotate(0deg); }
+   100% { transform:     translate(1px, -2px) rotate(-1deg); }
+ }
+ 
+ .shake { 
+    -webkit-animation-name: shake; 
+    animation-name: shake; 
+ }
+ 
+
+#statistics {
+	left: 0;
+	right: 0;
+	font-size: 0.9em;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+#statistics div.related-input > div {
+	display: inline-block;
+}
+
+div.related-input {
+	color: #fff;
+	font-size: 1.1em;
+}
+
+div.relatednav-t {
+	background-image: url(http://media.dalin.es/astralis/relatednav-t.gif);
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 1px;
+	margin: 0px auto;
+}
+div.relatednav-b {
+	background-image: url(http://media.dalin.es/astralis/relatednav-b.gif);
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 1px;
+	margin-bottom: 5px;
+}
+div.relatednav-b.shadow {
+	box-shadow: 0px 2px 3px #000;
+}
+
+div.relatednav-b.nospace {
+	margin-bottom: 0px;
+}
+
+div.related-input-help {
+	width: 100%;
+	color: #b6a38a;
+}
+
+div.related-input {
+	background-image: url(http://media.dalin.es/astralis/relatednav-bg.png);
+	background-color: transparent;
+	border: 0px;
+	padding: 6px 0px;
+	width: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+#statistics div.related-input {
+	padding: 5px 25px;
+	padding-bottom: 0px;
+}
+
+#statistics div.related-input #resources {
+	display: block;
+}
+
+#resources > div {
+	
+	color: #FFF;
+	margin-right: 15px;
+	margin-top: 7px;
+	padding: 2px;	
+	width: 38px;
+	height: 38px;
+}
+
+.crafting {
+	width: 32px;
+	height: 32px;
+	text-align: right;
+	position: relative;
+	text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000;
+	display: block;
+}
+
+.crafting span { 
+	position: absolute;
+	bottom: -3px;
+	right: 1px;
+}
+
+.crafting.assorted {
+	background-image: url(http://media.dalin.es/astralis/crafting_assorted.png);
+}
+
+.crafting.magic {
+	background-image: url(http://media.dalin.es/astralis/crafting_magic.png);
+}
+
+.crafting.rare{
+	background-image: url(http://media.dalin.es/astralis/crafting_rare.png);
+}
+
+#resources div.item.gold {
+	float: right;
+	width: auto;
+	margin-right: 0;
+	padding: 5px;
+}
+
+.crafting.gold {
+	width: 24px;
+	height: 24px; 
+	background-image: url(http://media.dalin.es/astralis/sprite.png);
+	background-position: 0 0;
+    background-repeat: no-repeat no-repeat;
+}
+
+.crafting.gold.small {
+	width: 12px;
+	height: 12px;
+	background-position: -54px -288px;
+}
+
+.crafting.inline {
+	display: inline-block;
+}
+
+#resources div.item.gold #resource-gold {
+	padding-top: 6px;
+	padding-left: 6px;
+}
+
+#resources div {
+	float: left;
+}
+
+#resources > div div {
+	
+	display: inline-block;
+	float: left;
+}
+
+#resources > div div.txt {
+	
+	margin-top: 4px;
+	margin-left: 5px;
+	text-align: right;
+	
+}
+
+#resources > div div.increment {
+	
+	margin-top: 4px;
+	margin-left: -20px;
+	
+}
+
+div.d-button {
+	
+	display: inline-block;
+	background-color: #800517;
+	padding: 1px;
+	
+}
+
+input.astralis {
+	
+	margin: 0;
+	background-image: url(http://media.dalin.es/astralis/table-header.png);
+	border: 1px solid #E55B3C;
+	color: #e7d1a8;
+	padding: 5px 25px;
+	text-shadow: 0 0 0.5em #000, 0 0 0.5em #000;
+	font-size: 1em;	
+	
+	-moz-box-shadow: 0 0 12px 5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 12px 5px rgba(0,0,0,0.5);
+	box-shadow: 0 0 12px 5px rgba(0,0,0,0.5);
+	
+}
+
+div.d-button.disabled, div.d-button.cancel {
+	
+	background-color: #333;
+	
+}
+
+div.d-button.disabled input.astralis, div.d-button.disabled input.astralis:hover, div.d-button.cancel input.astralis {
+	background-image: none;
+	background-color: #333;
+	border: 1px solid #666;
+	-moz-box-shadow: 0 0 12px 5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 12px 5px rgba(0,0,0,0.5);
+	box-shadow: 0 0 12px 5px rgba(0,0,0,0.5);
+	
+}
+div.d-button.cancel input.astralis:hover {
+	background-color: #444;
+	border: 1px solid #999;
+	-moz-box-shadow: 0 0 12px 5px rgba(48,48,48,0.25);
+	-webkit-box-shadow: 0 0 12px 5px rgba(48,48,48,0.25);
+	box-shadow: 0 0 12px 5px rgba(48,48,48,0.25);
+}
+
+input.astralis:hover {
+	background-image: url(http://media.dalin.es/astralis/table-header-hover.png);
+	cursor: pointer;
+	border: 1px solid #F9966B;
+	
+		
+	-moz-box-shadow: 0 0 12px 5px rgba(96,48,48,0.25);
+	-webkit-box-shadow: 0 0 12px 5px rgba(96,48,48,0.25);
+	box-shadow: 0 0 12px 5px rgba(96,48,48,0.25);
+	
+}
+
+#statistics div.related-input div.clear {
+	display: block;
+	margin: 0;
+	height: 7px;
+}
+
+#game-navigation {
+	z-index: 999;
+	width: 996px;
+	margin: 0px auto;
+	border-bottom: 1px solid #382f1f;
+}
+
+#game-navigation ul {
+	padding: 0 30px 0 30px;
+    margin: 0 4px;
+	list-style-type: none;
+}
+
+#game-navigation ul li {
+	margin: 1px 0;
+	display: inline-block;
+	height: 40px;
+	color: #ad835a;
+}
+#game-navigation ul li a {
+	cursor: pointer;
+	margin-bottom: -2px;
+	z-index: 999;
+	display: block;
+    padding: 0 15px;
+    height: 40px;
+    font: normal 12px/38px "Palatino Linotype", "Times", serif;
+    text-transform: uppercase;
+    background: #1a1814 url("http://media.dalin.es/anvil/tab-menu-tab.jpg") 0 0 repeat-x;
+    border: 1px solid #382f1f;
+    border-bottom: 0;
+    box-shadow: 0 -3px 15px 0 #090908;
+}
+
+#game-navigation ul li a.disabled {
+	cursor: default;
+	color: #333;
+	font-weight: bold;
+}
+
+#game-navigation ul li a.tab-active {
+    font-weight: bold;
+    color: #F3E6D0 !important;
+    cursor: default;
+	background-position: 0 -80px;
+    border-color: #382f1f;
+    border-bottom: 1px solid #12110f;
+}
+
+ul.resources {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.resources li {
+	margin-bottom: 15px;
+	width: 250px;
+    border: 1px solid #2d251b;
+    background: #090909;
+    padding: 15px 15px 12px 15px;
+    box-shadow: 0 0 5px 1px #090908;
+    cursor: pointer;
+}
+
+ul.resources li:hover {
+	border: 1px solid #382f1f;
+}
+
+ul.resources li.selected {
+	border: 1px solid #382f1f;
+	background: #191919;
+}
+
+ul.resources li:last-child {
+	margin-bottom: 0;
+}
+
+ul.resources li div.desc,
+ul.resources li div.icon {
+	float: left;
+}
+
+ul.resources li div.desc {
+	margin-left: 10px;
+}
+
+ul.resources li div.price .crafting {
+	display: inline-block;
+}
+
+ul.resources li div.price {
+	float: right;
+	white-space: nowrap;
+}
+
+.content-frame .frame-selection-container {
+	position: absolute;
+	top: -90px;
+	left: 0;
+	height: 60px;
+	width: 640px;
+	
+	
+}
+.content-frame .action-button {
+	font-size: 0.9em;
+	margin-top: 14px;
+	margin-left: 15px;
+}
+
+.frame-selection-container .action-overview {
+	float: right;
+	padding-top: 13px;
+}
+
+.frame-selection-container .action-overview div {
+	display: inline-block;
+	margin-right: 25px;
+}
+
+.frame-selection-container .action-overview div span.item {
+	margin-right: 4px;
+	vertical-align: middle;
+}
+
+#training-content {
+	text-align: center;
+}
+
+#training-content h2 {
+	font-family: "Diablo";
+	color: #ad835a;
+	margin: 0;
+}
+
+#training-content div.unlock {
+	margin-top: 10px;
+}
+
+#training-content h3 {
+	font-family: "Diablo";
+	color: #FFF;
+	font-size: 30px;
+	display: inline-block;
+	text-shadow: 0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000;
+	text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+	margin: 0;
+	margin-top: 5px;
+}
+
+#training-content p {
+	margin-top: 15px;
+	margin-bottom: 25px;
+}

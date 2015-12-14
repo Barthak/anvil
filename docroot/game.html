@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Anvil</title>
+		<meta name="description" content="">
+		<meta name="author" content="Marten Koedam">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/media/images/favicon.ico">
+		<link rel="apple-touch-icon" href="/media/images/apple-touch-icon.png">
+		
+		<link rel="stylesheet" type="text/css" href="media/css/core.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="media/js/core.js"></script>
+		
+	</head>
+
+	<body class="">
+
+		<div id="information" class="hidden"></div>
+		
+		<div id="header">
+			<div class="relatednav-t"></div>
+		
+			<div class="related-input">
+				<img src="media/images/ui/logo.png" />
+				
+				<div class="navigation">
+				
+					<div class="d-button">
+						
+						<input class="astralis" type="button" value="Reset" onclick="ANVIL.instance.reset();" />
+						
+					</div>
+					
+					<div class="d-button">
+						
+						<input class="astralis" type="button" value="Stats" />
+						
+					</div>
+					
+				</div>
+				
+			</div>
+				
+			<div class="relatednav-b shadow"></div>
+			
+		</div>
+		
+		<div id="statistics" class="">
+			<div class="relatednav-t"></div>
+		
+			<div class="related-input">
+				
+				<div id="resources" class="resources">
+					
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+				
+			<div class="relatednav-b shadow"></div>
+		</div>
+
+		<div id="item-progress"></div>		
+
+		<div id="game-navigation">
+			
+			<ul>
+				<li><a class="tab-active">Blacksmith</a></li>
+				<li><a class="disabled">recruit</a></li>
+				<li><a class="disabled">Army</a></li>
+			</ul>
+			
+		</div>
+
+		<div class="wrapper">
+			
+			<div class="level-number blacksmith-level-number"></div>
+
+			<div id="main">
+								
+				<div id="content-left">
+					
+					<div id="blacksmith" class="content-frame">
+						
+						<div id="item-picker-container" class="hidden">
+							
+							<div class="item-picker-top">
+							
+								<div id="item-picker-content">
+									
+									<h3>Craftables</h3>
+									
+									<div class="divider"></div>
+								
+									<div id="item-picker"></div>
+									
+								</div>
+																	
+							</div>
+							
+						</div>
+					
+						<div class="item-selector">
+							
+							<div class="item-wrapper">
+								<div id="selected-item"></div>
+							</div>
+							<div class="item-description i-desc"></div>
+							
+							<div class="clear"></div>
+							
+						</div>
+						
+						<div id="item-level-info" class="hidden">
+							<div class="level-info">
+								
+								Requires level
+								
+							</div>
+							<div class="level-number" id="level-requirement">1</div>
+						</div>
+						
+						<div class="frame-selection-container">
+							<div class="d-button action-button" id="forge">
+								
+								<input class="astralis" type="button" value="Forge item" />
+								
+							</div>
+							
+							<div class="action-overview"></div>
+							
+						</div>
+						
+					</div>
+
+					<div id="stock-frame" class="content-frame hidden">
+						
+						<ul class="resources" id="vendor">
+						</ul>
+						
+						<div class="frame-selection-container">
+							<div class="d-button action-button" id="vendor-purchase">
+					
+								<input class="astralis" type="button" value="Buy" />
+							
+							</div>
+							
+							<div class="action-overview"></div>
+							
+						</div>
+						
+					</div>
+					
+					<div id="training" class="content-frame hidden">
+						
+						<div id="training-content">
+							
+							
+							
+						</div>
+						
+						
+						<div class="frame-selection-container">
+							<div class="d-button action-button" id="train-blacksmith">
+					
+								<input class="astralis" type="button" value="Train" />
+							
+							</div>
+							
+							<div class="action-overview"></div>
+							
+						</div>
+						
+					</div>
+
+					
+					<span class="corner tl"></span>
+					<span class="corner tr"></span>
+					<span class="corner bl"></span>
+					<span class="corner br"></span>
+					
+				</div>
+				
+				<div id="content-right">
+
+					<div class="bs-content">
+
+						<div class="bs-bot">
+							
+							<div class="bs-top">	
+								
+								<div id="anvil">
+									<img src="http://media.dalin.es/astralis/crest.png" alt="crest" />
+								</div>
+							
+								<ul>
+									
+									<li onclick="ANVIL.instance.toggleFrame('blacksmith');">
+										
+										<!--id="anvil-image" class="animated"--> 
+										<span class="inner anvil animated">
+											<span class="circle-frame"></span>
+										</span>
+										
+										<h3>Forge item</h3>
+										
+										<span class="desc">
+											
+											Pick an item and create new powerful weapons and armor for the soldiers on the battlefield.
+											
+										</span>
+										
+									</li>
+
+									<li onclick="ANVIL.instance.toggleFrame('training', 'initTraining');">
+										
+										<!--id="anvil-image" class="animated"--> 
+										<span id="train" class="inner training">
+											<span class="circle-frame"></span>
+										</span>
+										
+										<h3>Training</h3>
+										
+										<span class="desc">
+											
+											Train your Blacksmith with new item plans and become a well respected Artisan.
+											
+										</span>
+										
+									</li>
+									
+									<li onclick="ANVIL.instance.toggleFrame('stock-frame');">
+										
+										<!--id="anvil-image" class="animated"--> 
+										<span id="stock" class="inner vendor">
+											<span class="circle-frame"></span>
+										</span>
+										
+										<h3>Restock materials</h3>
+										
+										<span class="desc">
+											
+											Purchase new raw materials in order to keep forging items.
+											
+										</span>
+										
+									</li>
+									
+								</ul>
+							
+							</div>
+					
+						</div>
+					
+					</div>	
+					
+				</div>
+				
+				
+				<div class="clear"></div>
+				
+			</div>
+	
+			<div class="clear"></div>
+		
+		</div>
+
+		
+		<div id="footer">
+			
+			<div class="relatednav-t"></div>
+		
+			<div class="related-input">
+				
+			</div>
+				
+			<div class="relatednav-b shadow"></div>
+			
+		</div>
+		
+		<div id="item-card" class="i-desc hidden"></div>
+		
+		
+		<script src="media/js/inventory.js"></script>		
+		<script src="media/js/item.js"></script>
+		<script src="media/js/weapons.js"></script>
+		<script src="media/js/anvil.js"></script>
+		
+	</body>
+</html>
