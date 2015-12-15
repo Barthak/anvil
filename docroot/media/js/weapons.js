@@ -37,6 +37,42 @@
 			rarity: 'normal',
 			affixes: []
 		},
+		flail: {
+			title: gettext('Rusty Flail'),
+			type: gettext('Flail'),
+			hands: 1,
+			level: 1,
+			minDamage: [2, 2],
+			maxDamage: [3, 3],
+			attackSpeed: 1.2,
+			steps: 5,
+			baseprice: 90,
+			price: {
+				gold: 0,
+				material: {assorted: 3, magic: 2},
+				max: 1
+			},
+			rarity: 'normal',
+			affixes: []
+		},
+		axe: {
+			title: gettext('Hand Axe'),
+			type: gettext('Axe'),
+			hands: 1,
+			level: 1,
+			minDamage: [2, 3],
+			maxDamage: [3, 4],
+			attackSpeed: 1.3,
+			steps: 5,
+			baseprice: 70,
+			price: {
+				gold: 0,
+				material: {assorted: 2, magic: 2},
+				max: 1
+			},
+			rarity: 'normal',
+			affixes: []
+		},
 		bow: {
 			title: gettext('Short Bow'),
 			type: gettext('Bow'),
@@ -55,29 +91,11 @@
 			rarity: 'normal',
 			affixes: []
 		},
-		axe: {
-			title: gettext('Hand Axe'),
-			type: gettext('Axe'),
-			hands: 1,
-			level: 2,
-			minDamage: [2, 3],
-			maxDamage: [3, 4],
-			attackSpeed: 1.3,
-			steps: 5,
-			baseprice: 70,
-			price: {
-				gold: 0,
-				material: {assorted: 2, magic: 2},
-				max: 1
-			},
-			rarity: 'normal',
-			affixes: []
-		},
 		sabre: {
 			title: gettext('Sabre'),
 			type: gettext('Sword'),
 			hands: 1,
-			level: 3,
+			level: 2,
 			minDamage: [4, 5],
 			maxDamage: [8, 10],
 			attackSpeed: 1.4,
@@ -95,7 +113,7 @@
 			title: gettext('Mace'),
 			type: gettext('Mace'),
 			hands: 1,
-			level: 3,
+			level: 2,
 			minDamage: [6, 7],
 			maxDamage: [10, 12],
 			attackSpeed: 1.2,
@@ -104,6 +122,24 @@
 			price: {
 				gold: 0,
 				material: {assorted: 2, magic: 4, rare: 1},
+				max: 1
+			},
+			rarity: 'normal',
+			affixes: []
+		},
+		spear: {
+			title: gettext('Javelin'),
+			type: gettext('Spear'),
+			hands: 1,
+			level: 2,
+			minDamage: [5, 6],
+			maxDamage: [7, 8],
+			attackSpeed: 1.2,
+			steps: 10,
+			baseprice: 170,
+			price: {
+				gold: 0,
+				material: {assorted: 2, magic: 2, rare: 1},
 				max: 1
 			},
 			rarity: 'normal',

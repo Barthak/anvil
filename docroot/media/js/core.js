@@ -12,7 +12,7 @@ var ANVIL = {
 		crafting_assorted: 100,
 		crafting_magic: 50,
 		crafting_rare: 10,
-		unlocked: ['sword', 'dagger']
+		unlocked: ['sword', 'dagger', 'axe', 'flail']
 	},
 	inventory: {}
 };
@@ -22,21 +22,21 @@ ANVIL.config = {
 	leveling: [
 		null,
 		{
-			unlock: ['sword', 'dagger'],
+			unlock: ['sword', 'dagger', 'axe', 'flail'],
 			price: {
 				gold: 0,
 				material: null,
 				max: 1
 			},
 		}, {
-			unlock: ['bow', 'axe'],
+			unlock: ['bow', 'sabre', 'mace', 'spear'],
 			price: {
 				gold: 2000,
 				material: null,
 				max: 1
 			},
 		}, {
-			unlock: ['sabre', 'mace'],
+			unlock: [],
 			price: {
 				gold: 2000,
 				material: null,
